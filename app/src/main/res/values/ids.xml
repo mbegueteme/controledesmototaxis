@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="back_conn" type="id">icon</item>
+    <item name="address" type="id">address</item>
+    <item name="passwd" type="id">password</item>
+    <item name="radiogroup" type="id">radiogroup</item>
+    <item name="name" type="id">name</item>
+    <item name="sex" type="id">sex</item>
+    <item name="numero" type="id">numero</item>
+    <item name="Registration" type="id">registration</item>
+    <item name="regisImg" type="id">registration</item>
+    <item name="img" type="id">img</item>
+    <item name="resetBloc" type="id">resetbloc</item>
+    <item name="imgReset" type="id">imgrest</item>
+    <item name="reset" type="id">reset</item>
+    <item name="AddBloc" type="id">addbloc</item>
+    <item name="imgAdd" type="id">imgadd</item>
+    <item name="addb" type="id">addb</item>
+</resources>

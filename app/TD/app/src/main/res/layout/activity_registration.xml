@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".Registration">
+
+    <ImageView
+        android:id="@+id/regisImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/back_conn"
+        />
+
+    <ImageView
+        android:id="@+id/back_conn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/back_ic"
+        />
+
+    <TextView
+        android:id="@+id/Registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Registration space"
+        android:textStyle="bold"
+        android:layout_below="@+id/regisImg"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FF9800"/>
+    <EditText
+        android:id="@+id/numero"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:hint="Number"
+        android:paddingLeft="5dp"
+        android:layout_below="@id/Registration"
+        android:layout_marginTop="40dp"
+        android:inputType="number"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:paddingLeft="5dp"
+        android:hint="Email"
+        android:layout_below="@id/numero"
+        android:layout_marginTop="25dp"
+        android:inputType="text"
+        android:textColor="@color/black"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:padding="3dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/sex"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:textSize="20dp"
+            android:paddingLeft="5dp"
+            android:text="Sex: "
+            android:gravity="center_vertical"
+            android:layout_below="@id/name"
+            android:textColor="@color/black"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/radiogroup">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/black"
+                android:text="Male"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Female"
+                android:layout_marginLeft="50dp"
+                android:textSize="20dp"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:paddingLeft="5dp"
+        android:hint="Locality"
+        android:layout_below="@id/linear"
+        android:layout_marginTop="25dp"
+        android:inputType="text"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/passwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:paddingLeft="5dp"
+        android:hint="Password"
+        android:layout_below="@id/address"
+        android:layout_marginTop="25dp"
+        android:inputType="text"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:paddingLeft="5dp"
+        android:hint="Image name"
+        android:layout_below="@id/passwd"
+        android:layout_marginTop="25dp"
+        android:inputType="text"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resetBloc"
+       android:paddingRight="20dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/round0"
+        android:orientation="horizontal"
+        android:layout_below="@+id/img"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/imgReset"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/reset"
+            />
+        <TextView
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:text="RESET"
+            android:layout_gravity="center"
+            android:labelFor="@id/reset"
+            android:textColor="#FF5722"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AddBloc"
+        android:paddingRight="20dp"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="15dp"
+        android:background="@drawable/round0"
+        android:orientation="horizontal"
+        android:layout_below="@+id/img"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/imgAdd"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/add_ic"
+            />
+        <TextView
+            android:id="@+id/addb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="ADD"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:inputType="text"
+            android:textColor="#448547"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
