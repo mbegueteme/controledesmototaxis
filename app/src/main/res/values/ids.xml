@@ -16,4 +16,14 @@
     <item name="AddBloc" type="id">addbloc</item>
     <item name="imgAdd" type="id">imgadd</item>
     <item name="addb" type="id">addb</item>
+    <item name="viewPage" type="id">viewPage</item>
+    <item name="back_icon" type="id">back_icon</item>
+    <item name="welcome" type="id">welcom</item>
+    <item name="userName" type="id">userName</item>
+    <item name="password" type="id">password</item>
+    <item name="validation" type="id">validation</item>
+    <item name="signin" type="id">signin</item>
+    <item name="forgot" type="id">forgot</item>
+    <item name="newAcount" type="id">newAcount</item>
+    <item name="shareButton" type="id">shareButton</item>
 </resources>
