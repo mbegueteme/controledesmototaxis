@@ -1,18 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="10dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:id="@+id/register"
+        android:layout_marginBottom="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/NumberV"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:hint="Number"
+            android:textSize="20dp"
+            android:backgroundTint="#0C5E56"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/immatV"
+            android:layout_marginTop="5dp"
+            android:hint="Immatriculation"
+            android:layout_below="@+id/NumberV"
+            android:textSize="20dp"
+            android:backgroundTint="#0C5E56"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/MarqueMotoV"
+            android:layout_marginTop="5dp"
+            android:hint="la marque de la moto"
+            android:layout_below="@+id/immatV"
+            android:textSize="20dp"
+            android:backgroundTint="#0C5E56"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/assuranceMotoV"
+            android:layout_marginTop="5dp"
+            android:hint="assurance de la moto"
+            android:layout_below="@+id/MarqueMotoV"
+            android:textSize="20dp"
+            android:backgroundTint="#0C5E56"
+            />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/numCarteV"
+            android:layout_marginTop="5dp"
+            android:hint="assurance de la moto"
+            android:layout_below="@+id/assuranceMotoV"
+            android:textSize="20dp"
+            android:backgroundTint="#0C5E56"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Button"
+        android:layout_below="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Add"
+            android:layout_marginTop="5dp"
+            android:id="@+id/add"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:paddingLeft="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Update:"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/add"
+            android:id="@+id/update"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:paddingLeft="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Delete"
+            android:layout_below="@+id/update"
+            android:layout_marginTop="5dp"
+            android:id="@+id/delete"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:paddingLeft="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="show_List"
+            android:layout_below="@+id/delete"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/show"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:paddingLeft="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="show_List"
+            android:layout_below="@+id/show"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/search"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:paddingLeft="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="show_List"
+            android:layout_below="@+id/search"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/deletteAll"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:paddingLeft="15dp"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>
